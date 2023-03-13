@@ -1,0 +1,32 @@
+@startuml
+
+skinparam actorStyle awesome
+
+User -> (Оформление закза)
+(Оформление закза) --> Server
+Server --> Robot
+Server --> Camera
+
+package Mooving {
+  usecase "Влево" as LEFT
+  usecase "Вправо" as RIGHT
+  usecase "Вперед" as FORWARD
+}
+
+Robot --> LEFT
+Robot --> RIGHT
+Robot --> FORWARD
+
+package Searching {
+  usecase "Поиск маршрута до кружки" as Search_route_drink
+  usecase "Поиск маршрута до пользователя" as Search_route_user
+  usecase "Поиск робота" as Search_robot
+  usecase "Поиск пользователя" as Search_user
+}
+
+Camera --> Search_route_drink
+Camera --> Search_route_user
+Camera --> Search_robot
+Camera --> Search_user
+
+@enduml
