@@ -44,7 +44,7 @@ public:
     }
 
     // Поиск контуров объекта(доделать)
-    Rect search_rect() {
+    bool search_rect() {
         vector<cv::Mat> objects;
         Mat image_hsv;
         vector<vector<Point>> contours;
@@ -53,6 +53,7 @@ public:
         Mat tmp_img(frame.size(), CV_8U);
 
         findContours(tmp_img, contours, 0, 1);
+        return 1;
 
         /////////////////////////?????????????
     }

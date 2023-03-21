@@ -1,0 +1,5 @@
+/home/anatoly/Documents/DelRobot/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/anatoly/Documents/DelRobot/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/anatoly/Documents/DelRobot/cmake-build-debug/Camera/CMakeFiles/Camera.dir
+/home/anatoly/Documents/DelRobot/cmake-build-debug/Camera/CMakeFiles/edit_cache.dir
+/home/anatoly/Documents/DelRobot/cmake-build-debug/Camera/CMakeFiles/rebuild_cache.dir
