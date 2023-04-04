@@ -1,8 +1,7 @@
-//
-// Created by anatoly on 04.04.23.
-//
+#include "iostream"
 
-#ifndef DELIVERYBOT_USER_H
-#define DELIVERYBOT_USER_H
-
-#endif //DELIVERYBOT_USER_H
+class User {
+public:
+    void makeOrder(){
+    }
+};

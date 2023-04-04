@@ -1,7 +1,7 @@
 #include "iostream"
 
 
-class Robot {
+class robot {
 public:
     void moveForward();
     void setAngle();
@@ -9,19 +9,19 @@ public:
     void stop();
 };
 
-void Robot::moveForward() {
+void robot::moveForward() {
     std::cout << "Forward";
 }
 
-void Robot::setAngle() {
+void robot::setAngle() {
     std::cout << "Angle";
 }
 
-void Robot::moveBack() {
+void robot::moveBack() {
     std::cout << "Back";
 }
 
-void Robot::stop() {
+void robot::stop() {
     std::cout << "Stopped";
 }
 

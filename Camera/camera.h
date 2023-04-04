@@ -14,9 +14,9 @@ class Camera_detect {
 private:
     string FILE_NAME;
 
-    color_HSV *BOT_BLUE_PART{};
-    color_HSV *BOT_PURPLE_PART{};
-    color_HSV *COLOR_TARGET{};
+    color_HSV *BOT_BLUE_PART{},
+              *BOT_PURPLE_PART{},
+              *COLOR_TARGET{};
 
     Mat frame;
     VideoCapture cap;
@@ -60,6 +60,7 @@ public:
 
     // Центр масс
     Point rect_centre(Rect r) {
+
         int x = r.x + (r.width / 2);
         int y = r.y + (r.height / 2);
 
@@ -68,6 +69,7 @@ public:
 
     // Центр между точками(для робота)
     Point centre_beetwen_point(Point p1, Point p2) {
+
         int x = (p1.x + p2.x) / 2;
         int y = (p1.y + p2.y) / 2;
 
@@ -76,6 +78,7 @@ public:
 
     // Необходимый угол поворота
     int calc_angle_beetwen_point(Point p_a, Point p_b) {
+
         double hyp = pow((p_b.x - p_a.x) * (p_b.x - p_a.x) + (p_b.y - p_a.y) * (p_b.y - p_a.y), 2);
         asin(hyp / (p_b.x - p_a.x));
 
