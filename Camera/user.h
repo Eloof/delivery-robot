@@ -2,6 +2,8 @@
 
 class User {
 public:
+
     void makeOrder(){
     }
+
 };
