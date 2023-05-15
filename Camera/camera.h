@@ -51,7 +51,6 @@ public:
 
         this->cap.open(id);
 
-
         if (!cap.isOpened())
             cout << "Error opening video stream or file" << endl;
 
@@ -70,7 +69,8 @@ public:
         std::vector<std::vector<cv::Point>> contours;
         cv::cvtColor(this->frame_result, image_hsv, cv::COLOR_BGR2HSV);
         cv::Mat tmp_img(frame.size(), CV_8U);
-        cv::inRange(image_hsv, cv::Scalar(color.h - 20, color.s - 50, 0), cv::Scalar(color.h + 20, color.s + 50, 255),
+        cv::inRange(image_hsv, cv::Scalar(color.h - 20, color.s - 50, 0),
+                    cv::Scalar(color.h + 20, color.s + 50, 255),
                     tmp_img);
         //Выделение непрерывных областей
         cv::findContours(tmp_img, contours, 0, 1);
@@ -170,11 +170,11 @@ public:
             return false;
     }
 
-    bool has_delta_distance_to_target(int delta) {
-        if (this->distance_target > delta)
-            return true;
-        else
+    bool has_distance_to_target(int distance) {
+        if (this->distance_target < distance)
             return false;
+        else
+            return true;
 
     }
 
@@ -189,6 +189,8 @@ public:
         this->refurbish_angle_bot();
         this->refurbish_angle_to_target();
         this->refurbish_distance_to_target();
+
+        cout << this->get_distance_to_target() << '\n';
 
     }
 

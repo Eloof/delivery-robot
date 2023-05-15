@@ -149,6 +149,21 @@
 		{
 			"isExternal" : true,
 			"path" : "/usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/235/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPkgConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/235/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/235/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageMessage.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
