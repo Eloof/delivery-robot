@@ -10,7 +10,7 @@ include_directories( ${OpenCV_INCLUDE_DIRS} )
 
 add_executable(${CAMERA_EXE_NAME} main.cpp
         color.h
-        robot_message_mqtt.h)
+        robot_message_mqtt.h settings.h)
 target_link_libraries(${CAMERA_EXE_NAME} ${OpenCV_LIBS}
         PkgConfig::Mosquitto)
 

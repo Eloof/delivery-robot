@@ -15,13 +15,14 @@
 			"set_property",
 			"_pkg_create_imp_target",
 			"_pkg_recalculate",
+			"_pkg_check_modules_internal",
 			"pkg_check_modules",
 			"include_directories"
 		],
 		"files" : 
 		[
 			"Camera/CMakeLists.txt",
-			"/snap/clion/235/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPkgConfig.cmake"
+			"/snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPkgConfig.cmake"
 		],
 		"nodes" : 
 		[
@@ -41,31 +42,37 @@
 				"parent" : 0
 			},
 			{
-				"command" : 5,
+				"command" : 6,
 				"file" : 0,
 				"line" : 8,
 				"parent" : 0
 			},
 			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 829,
+				"parent" : 3
+			},
+			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 837,
-				"parent" : 3
+				"line" : 657,
+				"parent" : 4
 			},
 			{
 				"command" : 3,
 				"file" : 1,
 				"line" : 339,
-				"parent" : 4
+				"parent" : 5
 			},
 			{
 				"command" : 2,
 				"file" : 1,
 				"line" : 320,
-				"parent" : 5
+				"parent" : 6
 			},
 			{
-				"command" : 6,
+				"command" : 7,
 				"file" : 0,
 				"line" : 9,
 				"parent" : 0
@@ -87,7 +94,7 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
 					"isSystem" : true,
 					"path" : "/usr/local/include/opencv4"
 				}
@@ -200,7 +207,7 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 6,
+				"backtrace" : 7,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libmosquitto.so",
 				"role" : "libraries"
 			}
@@ -228,7 +235,8 @@
 			"sourceIndexes" : 
 			[
 				1,
-				2
+				2,
+				3
 			]
 		}
 	],
@@ -248,6 +256,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "Camera/robot_message_mqtt.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Camera/settings.h",
 			"sourceGroupIndex" : 1
 		}
 	],

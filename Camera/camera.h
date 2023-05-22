@@ -170,7 +170,7 @@ public:
             return false;
     }
 
-    bool has_distance_to_target(int distance) {
+    bool has_distance_to_target(int distance) const {
         if (this->distance_target < distance)
             return false;
         else
